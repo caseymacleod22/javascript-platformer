@@ -15,6 +15,12 @@ window.onresize = function() {
 }
 
 let objects = []
+
+for(let i=0; i<32; i++) {
+   new wall(i*32, 400) 
+}
+
+
 window.onresize()
 p = new player(50, 50)
 

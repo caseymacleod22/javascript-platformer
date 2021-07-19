@@ -10,6 +10,7 @@ class wall {
     draw () {
         strokeColor(255, 255, 255)
         noFill()
+        strokeSize(2)
         rectangle(this.x, this.y, this.size, this. size)
     }
 }
