@@ -13,8 +13,10 @@ window.onresize = function() {
     canvas.height = height
     drawLoop()
 }
-window.onresize()
 
+let objects = []
+window.onresize()
+p = new player(50, 50)
 
 function loop() {
     stepLoop()
@@ -22,12 +24,16 @@ function loop() {
 }
 
 function stepLoop() {
-
+    for(let i = 0; i<objects.length; i++) {
+        if(objects[i].step) objects[i].step()
+    }
 }
 
 function drawLoop() {
     background(25, 25, 25)
-    p.draw()
+    for(let i = 0; i<objects.length; i++) {
+        if(objects[i].draw) objects[i].draw()
+    }
 }
 
 const target_fps = 30

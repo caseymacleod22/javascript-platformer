@@ -3,6 +3,7 @@ class player {
         this.x = x
         this.y = y
         this.size = 32
+        objects.push(this)
     }
     draw () {
         strokeColor(255, 255, 255)
@@ -10,4 +11,3 @@ class player {
         rectangle(this.x, this.y, this.size, this.size)
     }
 }
-let p = new player(50, 50)
