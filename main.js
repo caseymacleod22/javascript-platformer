@@ -27,6 +27,7 @@ p = new player(50, 50)
 function loop() {
     stepLoop()
     drawLoop()
+    keyEnd()
 }
 
 function stepLoop() {
