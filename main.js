@@ -11,17 +11,24 @@ window.onresize = function() {
     height = window.innerHeight
     canvas.width = width
     canvas.height = height
-
-
-    background(25, 25, 25)
-    noFill()
-    strokeColor(0, 255, 255)
-    strokeSize(3)
-    rectangle(25, 25, 50, 100)
-    strokeColor(255, 0, 0)
-    line(50, 100, 25, 300)
-    noStroke()
-    fillColor(0, 255, 255)
-    circle(200, 200, 75, 67)
+    drawLoop()
 }
 window.onresize()
+
+
+function loop() {
+    stepLoop()
+    drawLoop()
+}
+
+function stepLoop() {
+
+}
+
+function drawLoop() {
+    background(25, 25, 25)
+    p.draw()
+}
+
+const target_fps = 30
+setInterval(loop, 1000/target_fps)
