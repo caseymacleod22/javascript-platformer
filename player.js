@@ -16,7 +16,13 @@ class player {
         // this.y = mouseY
         // if(keyDown.W) this.y += 4
         this.yspd = this.gravity
-        if(wallCollision(this.bbx, this.x, this.y + this.yspd)) this.yspd = 0
+        if(wallCollision(this.bbx, this.x, this.y + this.yspd)) {
+            while(!wallCollision(this.bbx, this.x, this.y + Math.sign(this.yspd))) {
+                this.y += Math.sign(this.yspd)
+            }
+                this.yspd = 0
+            }
+        if(this.yspd > 30) this.yspd = 30    
         this.y += this.yspd
         this.bbx.update(this.x, this.y)
     }
@@ -24,6 +30,6 @@ class player {
         strokeColor(255, 255, 255)
         noFill()
         rectangle(this.x, this.y, this.size, this.size)
-        this.bbx.draw()
+        // this.bbx.draw()
     }
 }
