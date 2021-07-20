@@ -4,6 +4,7 @@ class wall {
         this.x = x
         this.y = y
         this.size = 32
+        this.bbx = new bbox(this.x, this.y, this.size, this.size)
         objects.push(this)
         walls.push(this)
     }
