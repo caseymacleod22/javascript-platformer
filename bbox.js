@@ -4,8 +4,8 @@ class bbox {
         this.y1 = y
         this.w = w
         this.h = h
-        this.x2 = this.x + this.w
-        this.y2 = this.y + this.h
+        this.x2 = this.x1 + this.w
+        this.y2 = this.y1 + this.h
     }
     update(x, y) {
         this.x1 = x

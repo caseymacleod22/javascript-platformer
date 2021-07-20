@@ -21,8 +21,8 @@ for(let i=0; i<32; i++) {
 }
 
 
-window.onresize()
 p = new player(50, 50)
+window.onresize()
 
 function loop() {
     stepLoop()

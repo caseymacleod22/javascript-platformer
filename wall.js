@@ -12,6 +12,9 @@ class wall {
         strokeColor(255, 255, 255)
         noFill()
         strokeSize(2)
+        if(this.bbx.collision(p.bbx)) {
+            strokeColor(255, 0, 0)
+        }
         rectangle(this.x, this.y, this.size, this. size)
     }
 }
