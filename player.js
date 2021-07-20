@@ -6,17 +6,18 @@ class player {
         this.bbx = new bbox(this.x, this.y, this.size, this.size)
 
         // game physics
-        this.graivty = 7
+        this.gravity = 5
         this.yspd = 0
 
         objects.push(this)
     }
     step() {
-        this.x = mouseX
-        this.y = mouseY
+        // this.x = mouseX
+        // this.y = mouseY
         // if(keyDown.W) this.y += 4
-        // this.yspd = this.graivty
-        // this.y += this.yspd
+        this.yspd = this.gravity
+        if(wallCollision(this.bbx, this.x, this.y + this.yspd)) this.yspd = 0
+        this.y += this.yspd
         this.bbx.update(this.x, this.y)
     }
     draw() {
