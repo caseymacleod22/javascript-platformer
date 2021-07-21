@@ -8,6 +8,8 @@ class player {
         // game physics
         this.gravity = 5
         this.yspd = 0
+        this.mspd = 10
+        this.xspd = 0
 
         objects.push(this)
     }
@@ -15,7 +17,8 @@ class player {
         // this.x = mouseX
         // this.y = mouseY
         this.yspd += this.gravity
-        if(keyPress.W) this.yspd = -20
+        let ground = wallCollision(this.bbx, this.x, this.y+1)
+        if(keyPress.W && ground) this.yspd = -25
         
         if(wallCollision(this.bbx, this.x, this.y + this.yspd)) {
             while(!wallCollision(this.bbx, this.x, this.y + Math.sign(this.yspd))) {
@@ -26,6 +29,10 @@ class player {
         if(this.yspd > 30) this.yspd = 30    
         this.y += this.yspd
         this.bbx.update(this.x, this.y)
+        
+        let d = keyDown.D - keyDown.A
+        this.xspd = d * this.mspd
+        this.x +=this.xspd
     }
     draw() {
         strokeColor(255, 255, 255)
