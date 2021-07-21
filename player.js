@@ -9,6 +9,7 @@ class player {
         this.gravity = 5
         this.yspd = 0
         this.mspd = 10
+        this.jspd = 25
         this.xspd = 0
 
         objects.push(this)
@@ -18,7 +19,7 @@ class player {
         // this.y = mouseY
         this.yspd += this.gravity
         let ground = wallCollision(this.bbx, this.x, this.y+1)
-        if(keyPress.W && ground) this.yspd = -25
+        if(keyPress.W && ground) this.yspd = -this.jspd
         
         if(wallCollision(this.bbx, this.x, this.y + this.yspd)) {
             while(!wallCollision(this.bbx, this.x, this.y + Math.sign(this.yspd))) {
@@ -32,6 +33,14 @@ class player {
         
         let d = keyDown.D - keyDown.A
         this.xspd = d * this.mspd
+
+        if(wallCollision(this.bbx, this.x + this.xspd, this.y)) {
+            while(!wallCollision(this.bbx, this.x + Math.sign(this.xspd), this.y)) {
+                this.x += Math.sign(this.xspd)
+            }
+                this.xspd = 0
+            }
+
         this.x +=this.xspd
     }
     draw() {
