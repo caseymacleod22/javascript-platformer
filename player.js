@@ -14,8 +14,9 @@ class player {
     step() {
         // this.x = mouseX
         // this.y = mouseY
-        // if(keyDown.W) this.y += 4
-        this.yspd = this.gravity
+        this.yspd += this.gravity
+        if(keyPress.W) this.yspd = -20
+        
         if(wallCollision(this.bbx, this.x, this.y + this.yspd)) {
             while(!wallCollision(this.bbx, this.x, this.y + Math.sign(this.yspd))) {
                 this.y += Math.sign(this.yspd)
