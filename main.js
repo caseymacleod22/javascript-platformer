@@ -24,11 +24,11 @@ new wall(15*32, 400-32)
 p = new player(50, 50)
 window.onresize()
 
-function loop() {
-    stepLoop()
-    drawLoop()
-    keyEnd()
-}
+// function loop() {
+//     stepLoop()
+//     drawLoop()
+//     keyEnd()
+// }
 
 function stepLoop() {
     for(let i = 0; i<objects.length; i++) {
