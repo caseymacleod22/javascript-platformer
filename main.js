@@ -19,7 +19,7 @@ let objects = []
 for(let i=0; i<32; i++) {
    new wall(i*32, 400) 
 }
-new wall(15*32, 400-32)
+// new wall(15*32, 400-32)
 
 p = new player(50, 50)
 window.onresize()
