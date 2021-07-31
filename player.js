@@ -6,11 +6,11 @@ class player {
         this.bbx = new bbox(this.x, this.y, this.size, this.size)
 
         // game physics
-        this.gravity = 5
-        this.yspd = 0
-        this.mspd = 10
-        this.jspd = 25
-        this.xspd = 0
+        // this.gravity = 5
+        // this.yspd = 0
+        // this.mspd = 10
+        // this.jspd = 25
+        // this.xspd = 0
 
         objects.push(this)
     }
