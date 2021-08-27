@@ -24,12 +24,12 @@ function wallCollision(bbx, x, y) {
     bbx.update(x, y)
     let ret = false
     
-    // for(let i=0; i<walls.length; i++) {
-    //     if(walls[i].bbx.collision(bbx)) {
-    //         ret = true
-    //         break
-    //     }
-    // }
+    for(let i=0; i<walls.length; i++) {
+        if(walls[i].bbx.collision(bbx)) {
+            ret = true
+            break
+        }
+    }
 
     bbx.update(lastX, lastY)
     return ret
