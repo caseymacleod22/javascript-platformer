@@ -12,12 +12,12 @@ function fillColor(r, g, b) {
     render.fillStyle = 'rgb('+r+','+g+','+b+')'
 }
 
-// function strokeColor(r, g, b) {
-//     r = String(r)
-//     g = String(g)
-//     b = String(b)
-//     render.strokeStyle = 'rgb('+r+','+g+','+b+')'
-// }
+function strokeColor(r, g, b) {
+    r = String(r)
+    g = String(g)
+    b = String(b)
+    render.strokeStyle = 'rgb('+r+','+g+','+b+')'
+}
 
 function noStroke() {
     render.strokeStyle = 'rgba(0, 0, 0, 0)'
