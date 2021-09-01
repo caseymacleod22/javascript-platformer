@@ -24,11 +24,11 @@ document.onkeypress = function(event) {
         keyPress[key] = true
     }
 }
-document.onkeyup = function(event) {
-    let key = (event.key).toUpperCase()
-    keyDown[key] = false
-    keyRelease[key] = true
-}
+// document.onkeyup = function(event) {
+//     let key = (event.key).toUpperCase()
+//     keyDown[key] = false
+//     keyRelease[key] = true
+// }
 
 function keyEnd() {
     for(let i in keyPress) {
