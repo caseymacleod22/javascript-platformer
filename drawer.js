@@ -5,12 +5,12 @@ function rectangle(x, y, w, h) {
     render.stroke()
 }
 
-// function fillColor(r, g, b) {
-//     r = String(r)
-//     g = String(g)
-//     b = String(b)
-//     render.fillStyle = 'rgb('+r+','+g+','+b+')'
-// }
+function fillColor(r, g, b) {
+    r = String(r)
+    g = String(g)
+    b = String(b)
+    render.fillStyle = 'rgb('+r+','+g+','+b+')'
+}
 
 function strokeColor(r, g, b) {
     r = String(r)
