@@ -17,13 +17,13 @@ for(let i=0; i<255; i++) {
     keyDown[l] = false
 }
 
-// document.onkeypress = function(event) {
-//     let key = (event.key).toUpperCase()
-//     if(!keyDown[key]) {
-//         keyDown[key] = true
-//         keyPress[key] = true
-//     }
-// }
+document.onkeypress = function(event) {
+    let key = (event.key).toUpperCase()
+    if(!keyDown[key]) {
+        keyDown[key] = true
+        keyPress[key] = true
+    }
+}
 document.onkeyup = function(event) {
     let key = (event.key).toUpperCase()
     keyDown[key] = false
