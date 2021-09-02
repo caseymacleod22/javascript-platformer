@@ -1,9 +1,9 @@
-function rectangle(x, y, w, h) {
-    render.beginPath()
-    render.rect(x, y, w, h)
-    render.fill()
-    render.stroke()
-}
+// function rectangle(x, y, w, h) {
+//     render.beginPath()
+//     render.rect(x, y, w, h)
+//     render.fill()
+//     render.stroke()
+// }
 
 function fillColor(r, g, b) {
     r = String(r)
