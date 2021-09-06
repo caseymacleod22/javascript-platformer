@@ -30,11 +30,11 @@ function loop() {
     keyEnd()
 }
 
-// function drawLoop() {
-//     background(25, 25, 25)
-//     for(let i = 0; i<objects.length; i++) {
-//         if(objects[i].draw) objects[i].draw()
-//     }
+function drawLoop() {
+    background(25, 25, 25)
+    for(let i = 0; i<objects.length; i++) {
+        if(objects[i].draw) objects[i].draw()
+    }
 }
 
 const target_fps = 30
