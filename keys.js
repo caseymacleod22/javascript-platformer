@@ -10,12 +10,12 @@ let keyPress = {}
 let keyDown = {}
 let keyRelease = {}
 
-// for(let i=0; i<255; i++) {
-//     let l = String.fromCharCode(i)
-//     keyPress[l] = false
-//     keyRelease[l] = false
-//     keyDown[l] = false
-// }
+for(let i=0; i<255; i++) {
+    let l = String.fromCharCode(i)
+    keyPress[l] = false
+    keyRelease[l] = false
+    keyDown[l] = false
+}
 
 document.onkeypress = function(event) {
     let key = (event.key).toUpperCase()
