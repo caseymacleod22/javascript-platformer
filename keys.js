@@ -6,9 +6,9 @@ document.onmousemove = function(event) {
 }
 
 
-let keyPress = {}
-let keyDown = {}
-let keyRelease = {}
+// let keyPress = {}
+// let keyDown = {}
+// let keyRelease = {}
 
 for(let i=0; i<255; i++) {
     let l = String.fromCharCode(i)
