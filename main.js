@@ -1,10 +1,10 @@
-let canvas = document.getElementById('mycanvas')
-let render = canvas.getContext('2d')
-let width
-let height
-canvas.style.left = '0px'
-canvas.style.top = '0px'
-canvas.style.position = 'absolute'
+// let canvas = document.getElementById('mycanvas')
+// let render = canvas.getContext('2d')
+// let width
+// let height
+// canvas.style.left = '0px'
+// canvas.style.top = '0px'
+// canvas.style.position = 'absolute'
 
 window.onresize = function() {
     width = window.innerWidth
