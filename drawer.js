@@ -36,12 +36,12 @@ function background(r, g, b) {
     rectangle(0, 0, width, height)
 }
 
-// function line(x1, y1, x2, y2) {
-//     render.beginPath()
-//     render.moveTo(x1, y1)
-//     render.lineTo(x2, y2)
-//     render.stroke()
-// }
+function line(x1, y1, x2, y2) {
+    render.beginPath()
+    render.moveTo(x1, y1)
+    render.lineTo(x2, y2)
+    render.stroke()
+}
 
 function circle(x, y, r) {
     render.beginPath()
