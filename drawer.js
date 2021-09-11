@@ -43,10 +43,10 @@ function line(x1, y1, x2, y2) {
     render.stroke()
 }
 
-// function circle(x, y, r) {
-//     render.beginPath()
-//     render.arc(x, y, r, 0, 2*Math.PI)
-//     render.fill()
-//     render.stroke()
-// }
+function circle(x, y, r) {
+    render.beginPath()
+    render.arc(x, y, r, 0, 2*Math.PI)
+    render.fill()
+    render.stroke()
+}
 
