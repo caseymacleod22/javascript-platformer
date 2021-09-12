@@ -6,13 +6,13 @@ canvas.style.left = '0px'
 canvas.style.top = '0px'
 canvas.style.position = 'absolute'
 
-// window.onresize = function() {
-//     width = window.innerWidth
-//     height = window.innerHeight
-//     canvas.width = width
-//     canvas.height = height
-//     drawLoop()
-// }
+window.onresize = function() {
+    width = window.innerWidth
+    height = window.innerHeight
+    canvas.width = width
+    canvas.height = height
+    drawLoop()
+}
 
 let objects = []
 
